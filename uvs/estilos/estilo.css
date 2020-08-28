@@ -73,6 +73,7 @@ nav a:hover{
 
 #hadias, #adeus, #oma, #sobre {
   display: flex;
+  flex-flow: column nowrap;
   background-color: whitesmoke;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 1rem;
@@ -81,10 +82,10 @@ nav a:hover{
   padding: 3rem;
 }
 
-#oma h2, #oma p {
+section h2 {
   /*caso deu xabu no googlefonts, irá usar próxima da lista, podemos colocar quais fontes quisermos na ordem que quiseremos nessa lista e browser vai tentando uma por uma em ordem*/
   font-family: 'Bebas Neue', cursive;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 section article {
