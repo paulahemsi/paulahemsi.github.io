@@ -1,14 +1,16 @@
 /*outra maneira de aplicar fontes, prof do vini recomenda esse*/
-/*máximo duas fontes pra não ficar muito caótico -e tb demorar mais pra carregar*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
+/*máximo duas fontes pra não ficar muito caótico -e tb demorar mais pra carregar*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 body, html {
   font-family: 'Open Sans Condensed', sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #F8F9FA;
+  color: #212529;
 }
-
 
 nav ul {
   border: 0px dashed blue;
@@ -20,7 +22,6 @@ nav ul {
   margin: 0;
   /*tentativa de deixar transparente mas não rolou, pode tirar se achar melhor*/
   z-index: 1;
-
   /*!!!!!as próximas linhas estão fixando o menu no topo, mas por alguma razão estão impedindo o script de rodar e tirar a barra da tela-acho que o lance é esse fixed, mas tirando tb não volta pra tela, não entendi onde está o xabu https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp!!!!*/
   /*position: fixed;*/
   top: 0;
@@ -34,7 +35,7 @@ nav ul {
 }
 
 nav li {
-  border: 0px solid whitesmoke;
+  border: 0px solid #F8F9FA;
   /*tirei para usar flex-basis do flex box que não é tão rígido, é inteligente tendo o valor por base*/
   /*width: 20%;*/
   background-color: rgba(0, 0, 0);
@@ -46,55 +47,58 @@ nav li {
   /*esse display faz a lista que é em blocos ficar in line porém com as propriedades do bloco (poder colocar padding e margem em todos os lados, etc), então no caso do menu fica horizontal. Se tirarmos essa linha volta a ser vertical*/
   display: inline-block;
   flex-basis: 25%;
-  
 }
 
 nav a {
   font-family: 'Open Sans Condensed', sans-serif;
-  border: 0.7px solid whitesmoke;
+  border: 0.7px solid #F8F9FA;
   padding: 0;
   margin: 0;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
-  color: rgb(235, 235, 235); 
+  color: rgb(235, 235, 235);
   /*mudar a característica do elemento de inline para block, dependendo do objetivo, nesse caso fazer o hover do link mudar todo o 'botão'*/
   display: block;
   /*como mudou para block, esse padding faz sentido, se não, não faria pq só estaria nos lados e queria em cima e embaixo*/
   padding: 0.2rem;
 }
 
-nav a:hover{
+nav a:hover {
   background-color: #CCFF33;
   border: 1.5px solid black;
   color: black;
   margin: 0;
 }
 
-#hadias, #adeus, #oma, #sobre {
-  display: flex;
-  flex-flow: column nowrap;
-  background-color: whitesmoke;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1rem;
-  text-align: justify;
-  justify-content: center;  
-  padding: 3rem;
-}
-
 section h2 {
   /*caso deu xabu no googlefonts, irá usar próxima da lista, podemos colocar quais fontes quisermos na ordem que quiseremos nessa lista e browser vai tentando uma por uma em ordem*/
   font-family: 'Bebas Neue', cursive;
   font-size: 3rem;
-}
-
-section article {
-  border: 2px dotted red;
-  margin: 2rem;
+  color: #343A40;
 }
 
 section h2 {
-  border: 2px dashed green;
+  border: 0px dashed red;
+  margin: 0;
+  padding: 0;
+}
+
+.direita {
+  text-align: right;
+}
+
+section p {
+  border: 0px dashed green;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+section article {
+  border: 1 dashed purple;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
 }
 
 .parallax-logo {
@@ -156,4 +160,51 @@ section h2 {
   background-size: cover;
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-basis: 40%;
+}
+
+.obras {
+  width: 80%;
+  background-color: #F8F9FA;
+  margin: 5rem auto;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  justify-content: space-around;
+}
+
+form {
+  margin: -0.5rem 3rem 0 0;
+  padding: 0;
+  border: 0px solid red;
+}
+
+footer, .materiais {
+  padding: 1rem 0 3rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  border-top: 0px solid #A61F11;
+}
+
+footer ul, .materiais ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: center;
+  border: 0px dashed red;
+  
+
+}
+
+footer li, .materiais li {
+  display: inline-block;
+  padding: 1rem;
+  border: 0px dashed red;
+  text-align: center;
 }
