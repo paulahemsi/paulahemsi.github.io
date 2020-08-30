@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,30 +14,47 @@
     <script src="scripts/arvore.js"></script-->
 </head>
 
+
+
+
+
+
 <body>
+
+
     <header>
 
         <nav id="menu">
-
             <ul>
-                <li><a href="#sobre">home</a></li>
-                <li><a href="#oma">obras</a></li>
-                <li><a href="#hadias">uv's</a></li>
-                <li><a href="#adeus">contato</a></li>
+                <li class="dropdown"><a href="#menu">Obras <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html#oma">Ôma, um Ex-petáculo</a>
+                        <a href="index.html#hadias">Há Dias Que Não Morro</a>
+                        <a href="index.html#adeus">Adeus Palhaços Mortos</a>
+                        <a href="index.html#lab">ultraVioleta_s.lab</a>
+                    </div>
+                </li>
+                <li><a href="#">obras</a></li>
+                <li><a href="#">uv's</a></li>
+                <li><a href="#contato">contato</a></li>
             </ul>
-
-
         </nav>
 
         <!--script do menu-->
         <script src="sketch.js"></script>
 
     </header>
-    <!--iframe class="glitch" src="https://editor.p5js.org/paulahemsi/embed/-k9bCfAB5"></iframe-->
 
-    <div class="parallax-logo"></div>
+
+
+
+    <div class="parallax" id="logo"></div>
+
+
+
 
     <section class="obras">
+
         <div class="wrapper">
             <h2 class="direita">Uv's</h2>
             <article>
@@ -51,9 +69,7 @@
                 </p>
             </article>
         </div>
-        <iframe width="540" height="401" src="https://www.youtube.com/embed/2b_2V-H-lT8" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+        <img src="imagens/ultravioletas.gif" alt="gif com glitch das ultraVioleta_s sentadas em um sofá aconchegante em reunião dando gostosas risada">
     </section>
 
     <div class="materiais">
@@ -63,10 +79,14 @@
             <li><a href="#"><img src="imagens/icon3.png" alt="Social Media 3."></a></li>
             <li><a href="#"><img src="imagens/icon4.png" alt="Social Media 4."></a></li>
         </ul>
-
     </div>
 
-    <div class="parallax-oma"></div>
+
+
+    <div class="parallax" id="oma"></div>
+    
+
+
     <section class="obras">
 
         <iframe width="540" height="401" src="https://www.youtube.com/embed/MDV8i0geiro" frameborder="0"
@@ -117,34 +137,24 @@
     </div>
 
 
-    <div class="parallax-hadias"></div>
+    <div class="parallax" id="hadias"></div>
     <section class="obras">
         <div class="wrapper">
             <h2 class="direita">Há Dias Que Não Morro</h2>
             <article>
                 <p>
-                    O espetáculo faz uma provocação: o que pode esconder uma rotina perfeita sem acidentes? E talvez, o
-                    que é uma rotina perfeita? A ideia contemporânea de vida ideal motivada por campanhas publicitárias
-                    e filmes é a da realização de sonhos individuais ou a normatização de personalidades e a
-                    massificação de desejos?
-                </p>
-                <p>
-                    Há Dias Que Não Morro mostra o dia a dia de três figuras que vivem uma rotina padronizada e
-                    repetitiva até que a estrutura entra aos poucos em
-                    colapso. O espetáculo levanta algumas questões contemporâneas: estamos presos? De que maneira?
-                    Quando nos damos contas desta condição? O que fazemos depois que nos conscientizamos? Como escapar?
-                </p>
-                <p>
-                    A peça apresenta-se como um ideograma japonês, como uma tela em branco ou uma carta de tarôt. Ou
-                    seja,
-                    como uma estrutura simbólica polissemica com espaço para o público projetar suas questões pessoais
-                    relacionadas ao macro tema abordado que é a mudança de paradigmas.
-                    Para isso, nos valemos do recurso da repetição presente nos corpos e nas palavras, uma medida que
-                    proporciona ao leitor/espectador reconhecimento das ações, de modo a causar-lhe um enlace,
-                    tornando-o
-                    parte da trama, uma espécie de olhar premonitório. Uma vez cúmplice, o público é “enredado”, e como
-                    se
-                    lhe fosse possível puxar o tapete de adivinho, reconfigura-se o significado daquilo que já conhece.
+                    It looks like it's going to rain tomorrow. It looks like it's going to be a starry night. Last night
+                    I didn't dream either. I don't know what to do. It looks like it's going to be a starry night. And
+                    if there are bees it's because there are bees. It's because there are bees it's because there are
+                    bees. And if there are bees it's because there are bees. It's because there are bees it's because
+                    there are bees. It looks like it's going to be a starry night. Good night! Good night! And the grass
+                    is as green as ever! I don't know what to do. It's because there are bees it's because there are
+                    bees. It looks like it's going to be a starry night. It's because there are bees it's because there
+                    are bees. I don't know what to do. And if there are bees it's because there are bees. It's because
+                    there are bees it's because there are bees. It looks like it's going to rain tomorrow. And if there
+                    are bees it's because there are bees. It looks like it's going to rain tomorrow. It looks like it's
+                    going to rain tomorrow. It's because there are bees it's because there are bees.
+
                 </p>
 
             </article>
@@ -166,12 +176,14 @@
     </div>
 
 
-    <div class="parallax-adeus"></div>
+    <div class="parallax" id="adeus"></div>
+
+
     <section class="obras">
         <iframe width="540" height="401" src="https://www.youtube.com/embed/GJ3UkCx8oco" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="wrapper">
-            <h2>Adeus, Palhaços Mortos</h2>
+            <h2> <a href="adeus.html"> Adeus, Palhaços Mortos</h2></a>
             <article>
                 <p>
                     And if there are bees it's because there are bees. It looks like it's going to rain tomorrow. Last
@@ -216,27 +228,89 @@
 
     </div>
 
-    <div class="parallax-uvs"></div>
-    <section class="obras">
+
+    <!--<div class="parallax" id="kombi"></div>-->
+
+
+
+    <section class="obras" id="lab">
+        <iframe width="540" height="401" src="https://editor.p5js.org/paulahemsi/embed/ky3kPS0_I"></iframe>
+        <div class="wrapper">
+            <h2>ultraVioleta_s.lab</h2>
+            <article>
+                <p>
+                    And if there are bees it's because there are bees. It looks like it's going to rain tomorrow. Last
+                    night
+                    I
+                    didn't dream either. I don't know what to do. Look! That strawberry-shaped cloud came back. It's
+                    because
+                    there are bees it's because there are bees. And the grass is as green as ever! Last night I didn't
+                    dream
+                    either. And if there are bees it's because there are bees. It looks like it's going to rain
+                    tomorrow. It
+                    looks like it's going to rain tomorrow. And the grass is as green as ever! And the grass is as green
+                    as
+                    ever! And the grass is as green as ever! And if there are bees it's because there are bees. And if
+                    there
+                    are
+                    bees it's because there are bees. And the grass is as green as ever! Last night I didn't dream
+                    either. I
+                    don't know what to do. And if there are bees it's because there are bees. And the grass is as green
+                    as
+                    ever!
+                    And if there are bees it's because there are bees. It looks like it's going to be a starry night. It
+                    looks
+                    like it's going to be a starry night. I don't know what to do.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <div class="parallax" id="uvs"></div>
+
+
+    <div class="parallax" id="glitch1"></div>
+
+
+    <section class="obras" id="contato">
         <!--falta preencher aqui pra formulário de fato rolar-->
         <form action="" method="">
             <fieldset>
                 <legend>
                     manda um oi!
                 </legend>
-                <label for="name" placeholder="seu nome aqui">Seu nome</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <label for="comments">Special requests:</label>
-                <textarea id="comments" name="comments"></textarea>
+                <!--tentando fazer o esquema do w3 para ser responsivo -por isso essas div row e col-->
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nome" placeholder="seu nome aqui">Seu nome</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="mensagem">Diga lá:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="mensagem" name="mensagem"></textarea>
+                    </div>
+                </div>
 
                 <label>
-                    <input id="subscribe" name="subscribe" type="checkbox" value="subscribe">Add me to your email
-                    list
+                    <input id="subscribe" name="subscribe" type="checkbox" value="subscribe">Quer receber novidades?
+                    (sem spam!)
                 </label>
                 <input id="send_to" type="hidden" name="send_to" value="paulahemsi@gmail.com">
-                <button type="submit">Submit</button>
+                <button type="submit">Enviar</button>
             </fieldset>
         </form>
 
