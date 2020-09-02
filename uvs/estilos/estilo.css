@@ -228,6 +228,22 @@ h2 a:hover {
   background-image: url("../imagens/kombi.jpg");
 }
 
+#adeus1 {
+  background-image: url("../imagens/adeus-victor1.jpg");
+}
+#adeus2 {
+  background-image: url("../imagens/adeus-victor2.jpg");
+}
+#adeus3 {
+  background-image: url("../imagens/adeus-victor3.jpg");
+}
+#adeus4 {
+  background-image: url("../imagens/adeus-victor4.jpg");
+}
+#adeus5 {
+  background-image: url("../imagens/adeus-victor5.jpg");
+}
+
 iframe {
   border: none;
 }
