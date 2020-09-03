@@ -4,32 +4,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=PT+Sans&display=swap');
 
-body, html {
-  font-family: 'Open Sans Condensed', sans-serif;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #F8F9FA;
-  color: #212529;
-}
-
-nav ul {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans+Condensed:wght@300&family=PT+Sans&display=swap');
+/* nav ul {
   border: 0px dashed blue;
-  /*tirando as bolinhas de cada item*/
   list-style-type: none;
   background-color: black;
-  /*aparentemente tem alguma questão com padding e margin em diferentes navegadores que faz sentido nesse caso tirar ambos*/
   padding: 0;
   margin: 0;
-  /*!!!!!as próximas linhas estão fixando o menu no topo, mas por alguma razão estão impedindo o script de rodar e tirar a barra da tela-acho que o lance é esse fixed, mas tirando tb não volta pra tela, não entendi onde está o xabu https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp!!!!*/
+  /*!!!!!as próximas linhas estão fixando o menu no topo, mas por alguma razão estão impedindo o script de rodar e tirar a barra da tela-acho que o lance é esse fixed, mas tirando tb não volta pra tela, não entendi onde está o xabu https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp!!!!
   position: fixed;
   top: 0;
   width: 100%;
   transition: top 0.3s;
-  /*experimentando flexbox no menu*/
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -38,16 +28,10 @@ nav ul {
 
 nav li {
   border: 0px solid #CCFF33;
-  /*tirei para usar flex-basis do flex box que não é tão rígido, é inteligente tendo o valor por base*/
-  /*width: 20%;*/
   background-color: rgba(0, 0, 0);
-  /*isso a princípio não faz sentido em elementos inline pq eles ficam do tamanho do conteúdo, a não ser que vc mude para deixarem de serem inlines*/
-  text-align: center;
-  /*tirei a margem para usar flixbox*/
-  /*margin: 0.2rem 2rem;*/
   padding: 0;
-  /*esse display faz a lista que é em blocos ficar in line porém com as propriedades do bloco (poder colocar padding e margem em todos os lados, etc), então no caso do menu fica horizontal. Se tirarmos essa linha volta a ser vertical*/
   display: inline-block;
+  text-align: center;
   flex-basis: 25%;
 }
 
@@ -60,17 +44,16 @@ nav a, .dropdown a {
   font-weight: bold;
   font-size: 1.5rem;
   color: rgb(216, 211, 211);
-  /*mudar a característica do elemento de inline para block, dependendo do objetivo, nesse caso fazer o hover do link mudar todo o 'botão'*/
   display: block;
-  /*como mudou para block, esse padding faz sentido, se não, não faria pq só estaria nos lados e queria em cima e embaixo*/
+  /*como mudou para block, esse padding faz sentido, se não, não faria pq só estaria nos lados e queria em cima e embaixo
   padding: 0.2rem;
 }
 
-/*tentando deixar o drop down menu do mesmo tamanho que o Obras*/
+/*tentando deixar o drop down menu do mesmo tamanho que o Obras
 .dropdown-content, .dropdown .dropdown-content a{
   display: block;
 }
-/*só esse bloco*/
+/*só esse bloco
 
 nav a:hover {
   border: 0.7px solid  #CCFF33;
@@ -79,29 +62,14 @@ nav a:hover {
   background-color: rgb(20, 20, 20);
 }
 
-/*TENTANDO MENU QUE DESCE PARA AS OBRAS*/
-/* The dropdown container */
+/*TENTANDO MENU QUE DESCE PARA AS OBRAS
+/* The dropdown container 
 .dropdown {
    overflow: hidden;
    margin: 0;
    padding: 0;
 }
 
-/* Dropdown button 
-.dropdown .dropbtn {
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones 
-  margin: 0; /* Important for vertical align on mobile phones 
-}
-
-/* Add a red background color to navbar links on hover */
-/*nav a:hover {
-  background-color: rgba(204, 255, 51, 0.8);
-  border: 0.7px solid   rgba(204, 255, 51, 0.8);
-  color: black;
-}*/
-
-/* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -111,7 +79,6 @@ nav a:hover {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   float: none;
   color: #F8F9FA;
@@ -123,74 +90,58 @@ nav a:hover {
   font-size: 1.5rem;
 }
 
-/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: rgba(204, 255, 51, 0.8);
   border: 0.7px solid  rgba(204, 255, 51, 0.8);
   color: black;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/*_______________________________*/
+_______________________________*/
 
-section h2 {
-  /*caso deu xabu no googlefonts, irá usar próxima da lista, podemos colocar quais fontes quisermos na ordem que quiseremos nessa lista e browser vai tentando uma por uma em ordem*/
-  font-family: 'Bebas Neue', cursive;
-  /*font-family: 'Abel', sans-serif;*/
-  font-size: 3rem;
-  color: #343A40;
+
+
+body, html {  
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #F8F9FA;
+  color: #212529;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
   border: 0px dashed red;
-  margin: 0;
-  padding: 0;
 }
 
-.direita {
-  text-align: right;
-}
-
-section p {
-  border: 0px dashed green;
-  margin: 0;
-  padding: 1rem 0;
-}
-
-#adeus-p p {
-  margin: 1rem 0;
-  padding: 0 3.5rem 0 0;
-  margin: 2rem 2rem 0 0;
-  line-height: 1.5rem;
-}
-
-#adeus-p a {
+a {
   font-size: 5rem;
-}
-
-#adeus-p .wrapper {
-  flex-basis: 60%;
-}
-
-section article {
-  border: 0 dashed purple;
-  margin: 0;
-  padding: 0;
-  text-align: justify;
-}
-
-.wrapper a {
-  text-decoration: none;
-}
-
-h2 a {
   color: #343A40;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5rem;
+
+  border: 0px solid blue;
 }
 
-h2 a:hover {
+
+a:hover {
   text-decoration: none;
+  /* font-weight: bold; */
   color: #3209B1;
+}
+
+#contato {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5rem 0;
 }
 
 .parallax {
@@ -212,9 +163,7 @@ h2 a:hover {
 #hadias {
   background-image: url("../imagens/hadias.jpg");
  }
-#adeus {
-  background-image: url("../imagens/adeus.jpg");
-}
+
 #uvs {
   background-image: url("../imagens/uvs.jpg");
   }
@@ -244,31 +193,18 @@ h2 a:hover {
   background-image: url("../imagens/adeus-victor5.jpg");
 }
 
-iframe {
-  border: none;
-}
-
-.wrapper {
-  display: flex;
-  flex-flow: column nowrap;
-  flex-basis: 40%;
-}
 
 
 
-.obras {
-  width: 80%;
-  background-color: #F8F9FA;
-  margin: 5rem auto;
-  padding: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  justify-content: space-around;
-}
+
+
+
+
+
+
 
 button {
-  font-family: 'Bebas Neue', cursive;
+  /* font-family: 'Bebas Neue', cursive; */
   font-size: 1rem;
   border: 1px solid #343A40;
   margin: 1rem 0;
@@ -286,29 +222,47 @@ form {
   border: 0px solid red;
 }
 
-footer, .materiais {
-  padding: 1rem 0 3rem 0;
+footer {
+  padding: 0;
+  margin: 0;
   text-align: center;
   font-size: 0.8rem;
   border-top: 0px solid #A61F11;
 }
 
-footer ul, .materiais ul {
+footer ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
   justify-content: center;
   border: 0px dashed red;
   
 
 }
 
-footer li, .materiais li {
+footer li {
   display: inline-block;
-  padding: 1rem;
-  border: 0px dashed red;
+  padding: 0;
+  margin: 0;
+  border: 0px dashed blue;
   text-align: center;
+  flex-basis: 2%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*FORMULÁRIO - tentando que seja responsivo*/
