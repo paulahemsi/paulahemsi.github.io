@@ -18,3 +18,47 @@ body, html {
   margin: 0;
   padding: 0;
 }
+
+article {
+  font-size: 1.5rem;
+  width: 60%;
+  text-align: justify;
+  border: 0px solid red;
+  margin: 6rem auto;
+}
+
+dl {
+  font-size: 1rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 0.5rem;
+}
+
+/*------GALERIA DE IMAGENS------*/
+
+
+.swiper-button-prev {
+  display: block;
+  color: rgb(0, 29, 255);
+}
+
+.swiper-button-next {
+  color: rgb(0, 29, 255);
+}
+
+.swiper-button-prev:hover {
+color : #F8F9FA;
+
+}
+
+.swiper-button-next:hover {
+  color : #F8F9FA;
+}
+
+
+/*------FIM DA GALERIA-----*/
