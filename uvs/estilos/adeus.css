@@ -10,12 +10,11 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #212529;
+  background-color: #02020C;
   color: #F8F9FA;
 }
 
 #foto1 {
-  background-image: url("../imagens/hadias.jpg");
   min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
