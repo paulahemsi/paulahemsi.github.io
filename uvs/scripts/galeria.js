@@ -1,6 +1,7 @@
 
+
 //setamos as coisas de dentro do objeto de acordo com as possibilidades que queremos usar do que a API do swiper nos oferece
-new Swiper(".swiper-container", { 
+let swiper = new Swiper(".swiper-container", { 
     speed: 1500,
     //spaceBetween: 100,
     effect: "slider",
@@ -28,5 +29,15 @@ new Swiper(".swiper-container", {
     },
     loop: true,
     grabCursor: true,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
 });
+
+mySwiper.autoplay.start(swiper);
 
