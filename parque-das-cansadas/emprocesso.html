@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parque das cansadas</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="https://use.typekit.net/yxd7izj.css">
+    <link rel="stylesheet" type="text/css" href="./base.css" />
+    <link rel="stylesheet" type="text/css" href="./split.css" />
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function () {
+            var e,
+                t = document.createElement("style");
+            return (
+                (t.innerHTML = "root: { --tmp-var: bold; }"),
+                document.head.appendChild(t),
+                (e = !!(
+                    window.CSS &&
+                    window.CSS.supports &&
+                    window.CSS.supports("font-weight", "var(--tmp-var)")
+                )),
+                t.parentNode.removeChild(t),
+                e
+            );
+        };
+        supportsCssVars() ||
+            alert(
+                "Please view this in a modern browser that supports CSS Variables."
+            );
+    </script>
+</head>
+
+<body class="cansadas loading">
+    <main>
+        <div class="message">Some message for mobile (if needed).</div>
+
+        <div class="content">
+            <div class="fold-content" id="base-content">
+                
+                <p class="content__type">
+                    <span class="content__type-special">Exhausted? Enraged?</span>In need of some hard core
+                    fun? Welcome to Carnival Fury! A place to let
+                    off steam when you just can’t take it anymore!
+                </p>
+                <img class="content__img" src="./cansadas/1.png" alt="" />
+                <p class="content__type">
+                    De repente, o som de uma máquina ligando. Olha para o
+                    lado e vê uma barraca acesa. No caminho o som contínuo
+                    da máquina fica mais nítido. Ao chegar lá, vê um estande
+                    de tiro estilo antigo. E no trilho vê uma figura de
+                    madeira deslizando de um lado para o outro. A figura ri
+                    provocante. Uma espingarda surge no balcão e brilha com
+                    um som leve. A figura solta uma risadinha tétrica. A
+                    mulher pega a arma, a figura leva um sustinho de leve e
+                    ri excitada, continuando a se mover de um lado para o
+                    outro (seus olhos sempre focados na mulher).
+                </p>
+                <img class="content__img" src="./cansadas/2.png" alt="" />
+                <p class="content__type">
+                    THE MORE WOMEN WHO SPEAK UP,<br>
+                    the more women who speak up.<br> <br>
+                    THE MORE WOMEN WHO KILL THEIR DEMONS,
+                    the less demons will feel like they can<br>
+                </p>
+                <img class="content__img" src="./cansadas/3.png" alt="" />
+                <p class="content__type"><span class="content__type-special"">SELF-LIBERATION</span></p>
+                
+                <img class=" content__img" src="./cansadas/4.png" alt="" />
+                <p class="content__type">Don’t worry,<br> it’s just a game.</p>
+                <img class="content__img" src="./cansadas/5.png" alt="" />
+            </div>
+            <div class="screen" id="fold-wrapper"></div>
+            <button class="btn-debug" id="btn-debug">See Planes</button>
+        </div>
+    </main>
+    <script src="./imagesloaded.pkgd.min.js"></script>
+    <script src="./split.js"></script>
+</body>
+
+</html>
